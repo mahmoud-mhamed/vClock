@@ -1,0 +1,128 @@
+/*main style*/
+body{
+    background: #F0F0F0;
+}
+.clock{
+    font-family:'New Rocker', cursive;
+}
+.playFont *,.playFont {
+    color: rgb(33, 136, 56);
+}
+.stopPlayFont *,.stopPlayFont{
+    color:#707e14;
+}
+
+/*start header*/
+header .navbar{
+    background: #3D3C3C;
+}
+header nav a.navbar-brand {
+    background: url("../img/logo-full.png");
+    height: 60px;
+    width: 230px;
+    background-size: cover;
+    margin: auto;
+}
+/*nav top*/
+header nav.fixed-top{
+    z-index: 1000;
+    background: #0090DD;
+}
+header nav.fixed-top li span{
+    display: inline-block;
+}
+header nav.fixed-top ul li{
+    padding: 0 10px;
+}
+header nav.fixed-top ul li *{
+    color: white;
+}
+header nav.fixed-top ul li i{
+    color: #0b2db2;
+}
+/*nav left*/
+header nav.sidebarNavigation,#navLeft{
+    width: 100px;
+    padding-left: 0;
+    padding-right: 0;
+}
+header nav.sidebarNavigation span ,#navLeft span{
+    display: block;
+}
+header nav.sidebarNavigation li,#navLeft li{
+    padding: 15px 0;
+    border-bottom: 1px #ccc solid;
+}
+header nav.sidebarNavigation li.active,#navLeft li.active{
+    background: #DFDFDF;
+}
+nav.sidebarNavigation li.active a,header nav.sidebarNavigation li.active span i,
+#navLeft li.active a,#navLeft li.active span i{
+    color: #535b61;
+}
+
+/*start main*/
+/*start time*/
+main section{
+    width: 92%;
+    margin:2em auto;
+    background: white;
+    height: 100px;
+    color: #555560;
+}
+main section.time div{
+    line-height: 100px;
+}
+@media (max-width: 410px) {
+    main section.time div span:last-child{
+        display:block;
+        line-height: 0;
+    }
+    main section{
+        height: 140px;
+    }
+}
+
+
+/*start main asid*/
+main aside{
+    width: 92%;
+    margin:2em auto;
+    background: white;
+    min-height: 200px;
+    color: #555560;
+}
+
+/*start stopWatch*/
+@media (min-width: 500px) {
+    .stopWatch .h1{
+        font-size: 4.5em;
+    }
+}
+
+.stopWatch .h1 sub{
+    width: 10px;
+    display: inline-block;
+}
+.stopWatch .h1 span[data-date="second"]{
+    display: inline-block;
+    width: 80px;
+}
+
+/*start timer*/
+.timer i{
+    cursor: pointer;
+}
+.timer input[type='number']{
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+/*start alarm*/
+.alarm i{
+    cursor: pointer;
+}
+.alarm input[type='number']{
+    font-size: 34px;
+    font-weight: bolder;
+}
